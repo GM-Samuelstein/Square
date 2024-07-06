@@ -43,21 +43,28 @@ class ProductTile extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 5.h),
-            Text(
-              '\$ ${product.price}',
-              style: AppTextTheme.bodyLarge(
-                textColor: AppColorTheme.black,
-                fontWeight: FontWeight.w600,
+            SizedBox(height: 12.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              child: Text(
+                '\$ ${product.price}',
+                style: AppTextTheme.bodyLarge(
+                  textColor: AppColorTheme.black,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
             SizedBox(height: 6.h),
-            Text(
-              product.title,
-              style: AppTextTheme.bodyMedium(
-                textColor: AppColorTheme.black,
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              child: Text(
+                product.title,
+                style: AppTextTheme.bodyMedium(
+                  textColor: AppColorTheme.black,
+                ),
               ),
             ),
+            SizedBox(height: 10.h),
           ],
         ),
       ),

@@ -27,7 +27,7 @@ class AppTextTheme {
   }
 
   static TextStyle bodyLarge({
-    Color textColor = AppColorTheme.gray3,
+    Color textColor = AppColorTheme.gray4,
     FontWeight fontWeight = FontWeight.w500,
   }) {
     return GoogleFonts.inter(
@@ -49,7 +49,7 @@ class AppTextTheme {
   }
 
   static TextStyle bodySmall({
-    Color textColor = AppColorTheme.gray3,
+    Color textColor = AppColorTheme.gray4,
     FontWeight fontWeight = FontWeight.w400,
   }) {
     return GoogleFonts.inter(

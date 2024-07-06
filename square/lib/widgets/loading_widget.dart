@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:square/widgets/shimmer.dart';
 
 const _shimmerGradient = LinearGradient(
@@ -22,10 +23,12 @@ class LoadingWidget extends StatelessWidget {
     super.key,
     required this.width,
     required this.height,
+    this.isText = false,
   });
 
   final double width;
   final double height;
+  final bool isText;
 
   @override
   Widget build(BuildContext context) {
@@ -36,9 +39,10 @@ class LoadingWidget extends StatelessWidget {
         child: Container(
           width: width,
           height: height,
-          decoration: const BoxDecoration(
-          color: Colors.black,
-        ),
+          decoration:  BoxDecoration(
+            color: Colors.black,
+            borderRadius: isText ? BorderRadius.circular(12.r): null
+          ),
         ),
       ),
     );
